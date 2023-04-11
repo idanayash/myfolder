@@ -4,7 +4,7 @@ spring:
   cloud:
     consul:
       discovery:
-        instanceId: service-b
+        instanceId: service-b:${random.value}
         health:
           check:
             interval: 5s
