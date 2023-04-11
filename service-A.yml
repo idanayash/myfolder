@@ -4,7 +4,7 @@ spring:
   cloud:
     consul:
       discovery:
-        instanceId: gatway
+        instanceId: getway
         health:
           check:
             interval: 5s
