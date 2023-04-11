@@ -12,8 +12,8 @@ spring:
   cloud:
     gateway:
       routes:
-      - id: service-b
-        uri: lb://service-b
+      - id: service-a
+        uri: lb://service-a
         predicates:
         - Cookie=mycookie,mycookievalue
-        - Path=/srvb/**
+        - Path=/srva/**
