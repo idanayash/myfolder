@@ -16,3 +16,4 @@ spring:
         uri: lb://service-b
         predicates:
         - Cookie=mycookie,mycookievalue
+        - Path=/srvb/**
