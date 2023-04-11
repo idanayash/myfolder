@@ -1,1 +1,2 @@
-#Hello
+server:
+  port: 8089
