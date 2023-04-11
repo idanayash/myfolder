@@ -1,19 +1,10 @@
 server:
-  port: 8080
+  port: 8089
 spring:
   cloud:
     consul:
       discovery:
-        instanceId: getway
+        instanceId: service-a
         health:
           check:
             interval: 5s
-spring:
-  cloud:
-    gateway:
-      routes:
-      - id: service-a
-        uri: lb://service-a
-        predicates:
-        - Cookie=mycookie,mycookievalue
-        - Path=/srva/**
