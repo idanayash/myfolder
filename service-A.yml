@@ -13,6 +13,6 @@ spring:
     gateway:
       routes:
       - id: service-b
-        uri: http://service-b
+        uri: localhost
         predicates:
         - Cookie=mycookie,mycookievalue
