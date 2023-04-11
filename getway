@@ -12,7 +12,7 @@ spring:
   cloud:
     gateway:
       routes:
-      - id: service-b
-        uri: lb://service-b
+      - id: my-route
+        uri: lb://service-a
         predicates:
-        - Path=/srvb/**
+        - Path=/srva/**
